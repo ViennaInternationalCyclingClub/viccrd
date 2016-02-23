@@ -230,12 +230,16 @@ b, strong {
     height: 28px;
     top: 26px;
     left: 24px;
-    background-image: url(../images/social.png);
+    background-image: url(../images/social-instmailfb.png);
     background-size: auto 100%
 }
 
-.social a.facebook::after {
+.social a.email::after {
     background-position: -28px 0
+}
+
+.social a.facebook::after {
+    background-position: -56px 0
 }
 
 .social a:hover {
@@ -542,8 +546,9 @@ nav div ul li:hover:before {
 }
 
 #content {
+    text-align: center;
     padding: 50px 0;
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 
 .content blockquote {
