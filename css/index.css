@@ -502,6 +502,7 @@ nav div ul li:hover:before {
     z-index: 1;
     background: url(../images/bg/bg-init.jpg);
     background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center center
 }
 
