@@ -144,7 +144,7 @@ function getImg () {
   if (width > 1080) {
     return '../images/bg/bg1080.jpg'
   } else if (width > 720 && ratio > 1) {
-    return '../images/bg/bg1080.jph'
+    return '../images/bg/bg1080.jpg'
   } else if (width > 720 && ratio == 1) {
     return '../images/bg/bg1080.jpg'
   } else if (ratio > 1) {
