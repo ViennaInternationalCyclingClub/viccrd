@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+    <![endif]-->
+    <!--[if IE 7]>
+        <html class="no-js lt-ie9 lt-ie8">
+        <![endif]-->
+        <!--[if IE 8]>
+            <html class="no-js lt-ie9">
+            <![endif]-->
+            <!--[if gt IE 8]>
+                <!
+            -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--
+<![endif]-->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            VICC Racing Division
+        </title>
+        <meta name="description" content="Vienna International Cycle Club Racing Division"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://racingdivision.viennainternationalcycle.club/"/>
+        <meta property="og:title" content="VICC Racing Division"/>
+        <meta property="og:image" content="http://racingdivision.viennainternationalcycle.club/images/og_image.png"/>
+        <meta property="og:description" content="Vienna International Cycle Club Racing Division"/>
+        <meta property="og:site_name" content="VICC Racing Division"/>
+        <link rel="shortcut icon" href="http://racingdivision.viennainternationalcycle.club/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="http://racingdivision.viennainternationalcycle.club/apple-touch-icon-180x180.png"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/h5bp.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+        <script>
+
+          // This is called with the results from from FB.getLoginStatus().
+          function statusChangeCallback(response) {
+            console.log('statusChangeCallback');
+            console.log(response);
+            // The response object is returned with a status field that lets the
+            // app know the current login status of the person.
+            // Full docs on the response object can be found in the documentation
+            // for FB.getLoginStatus().
+            if (response.status === 'connected') {
+              // Logged into your app and Facebook.
+              fillName();
+            } else if (response.status === 'not_authorized') {
+              // The person is logged into Facebook, but not your app.
+              document.getElementById('status').innerHTML = 'Please log ' +
+                'into this app.';
+            } else {
+              // The person is not logged into Facebook, so we're not sure if
+              // they are logged into this app or not.
+              document.getElementById('status').innerHTML = 'Please log ' +
+                'into Facebook.';
+            }
+          }
+
+          // This function is called when someone finishes with the Login
+          // Button.  See the onlogin handler attached to it in the sample
+          // code below.
+          function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+            });
+          }
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1791564067734216',
+              xfbml      : true,
+              version    : 'v2.6'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+
+          function fillName() {
+            FB.api('/me', function(response) {
+              document.getElementById('YourName').value = response.name;
+            });
+          }
+        </script>
+        <nav style="">
+            <div>
+                <!--
+                    <span>
+                        VICC Racing Division
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="http://racingdivision.viennainternationalcycle.club/#team">
+                                Team
+                            </a>
+                        </li>
+                    </ul>
+                -->
+                <div class="social">
+                    <a class="instagram" href="https://www.instagram.com/viccrd/">
+                        VICCRD on Instagram
+                    </a>
+                    <a class="email" href="mailto:office@viennainternationalcycle.club">
+                        Contact us
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/groups/viennainternationalcycleclub">
+                        VICC on Facebook
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div id="header">
+                <div class="content">
+                    <div id="logo">
+                        <!--<span class="burger">
+                        </span>-->
+                        <img src="images/viccrd-logo-240x184.png" alt="VICC RD Logo"/>
+                    </div>
+                    <div class="social">
+                        <a class="instagram" href="https://www.instagram.com/viccrd/">
+                            VICCRD on Instagram
+                        </a>
+                        <a class="email" href="mailto:office@viennainternationalcycle.club">
+                        Contact us
+                        </a>
+                        <a class="facebook" href="https://www.facebook.com/groups/viennainternationalcycleclub">
+                            VICC on Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="top">
+                <div class="content">
+                    <div class="addition">
+                    </div>
+                </div>
+                <div id="vis">
+                    <canvas data-paper-scope="1" height="463" width="1900" style="-moz-user-select: none;" id="Trianglewave">
+                    </canvas>
+                </div>
+            </div>
+            <div id="content">
+
+                Your Name
+                <form action="https://docs.google.com/forms/d/1BdUEFecDS011ZeDm9NFV7gG-1YrFUgEk719_Gm-wRpc/formResponse" method="POST">
+                  <input type="text" id="YourName" name="entry.1087553950" placeholder="Your Name"/>
+                  <input type="submit" value="Send"/>
+                </form>
+
+                Fetch name from Facebook:
+                <fb:login-button scope="public_profile" onlogin="checkLoginState();">
+                </fb:login-button>
+
+                <div id="status">
+                </div>
+
+                Proud branch of <a href="http://viennainternationalcycle.club/">Vienna International Cycle Club</a>
+            </div>
+        </main>
+        <script type="text/paperscript" canvas="Trianglewave" src="js/trianglewave.js">
+        </script>
+        <script defer="defer" src="js/modernizr.js">
+        </script>
+        <script defer="defer" src="js/paper-full-min.js">
+        </script>
+    </body>
+</html>
