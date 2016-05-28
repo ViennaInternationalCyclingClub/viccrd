@@ -142,7 +142,7 @@
                     eventHTML = eventHTML + event.place.name + ' at ';
                   }
                   eventHTML = eventHTML + event.start_time + ' </div>';
-                  eventHTML = eventHTML + '<div class="eventdesc"><a href="#" onclick="toggle_visibility(&apos;desc' + event.id + '&apos;);">' + event.description.substr(0,10) + '… [toggle desc]</a><div id="desc' + event.id + '" style="display: none">' + event.description + '</div></div>';
+                  eventHTML = eventHTML + '<div class="eventdesc"><a href="#" onclick="toggle_visibility(&apos;desc' + event.id + '&apos;);">' + event.description.substr(0,10) + '… [toggle desc]</a><div id="desc' + event.id + '" style="display: none"><pre>' + event.description + '</pre></div></div>';
                   eventHTML = eventHTML + '</div>';
 
             return eventHTML;
@@ -156,7 +156,7 @@
           var groupEventData = {};
 
           function FetchEventInfo() {
-            var groupIDs = [ 405823429521484, 627034744072232, 973517972699941 ];
+            var groupIDs = [ 405823429521484, 627034744072232, 973517972699941, 173801392994350 ];
 
             for (var i = 0; i < groupIDs.length; i++) {
               FB.api('/v2.6/' + groupIDs[i] + '/events?since=' + nowEpoch + '&until=' + nextWeekEpoch, function(response) {
@@ -250,7 +250,7 @@
                 </h1>
                 <div class="paras">
                     <div>
-                        Click on FB Login and wait for ~5sec to fetch group ride events (VICC, Mitzi &amp; Friends, KGFDW) upcoming inside the next 7 days.
+                        Click on FB Login and wait for ~5sec to fetch group ride events (VICC, Mitzi &amp; Friends, KGFDW, Radsporttreff) upcoming inside the next 7 days.
                     </div>
                     <div id="Events"></div>
                     <div id="fbnamefetch">
